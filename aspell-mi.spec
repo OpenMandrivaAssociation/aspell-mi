@@ -40,8 +40,8 @@ A %{languageenglazy} dictionary for use with aspell, a spelling checker.
 %install
 %makeinstall_std
 
-mkdir -p $RPM_BUILD_ROOT/%{_datadir}/aspell
-mkdir -p $RPM_BUILD_ROOT/%{_libdir}/aspell
+mkdir -p %{buildroot}/%{_datadir}/aspell
+mkdir -p %{buildroot}/%{_libdir}/aspell
 
 chmod 644 Copyright README* doc/*
 
